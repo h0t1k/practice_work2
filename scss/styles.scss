@@ -14,8 +14,8 @@
     height: 900px;
   }
   &__navigation {
-    z-index: 5;
     position: relative;
+    z-index: 5;
     display: inline-flex;
     gap: 740px;
     padding: 0px 72px;
@@ -31,31 +31,77 @@
   &__list {
     display: flex;
     flex-direction: row;
-    gap: 48px;
-    height: 88px;
-
     background-color: none;
-  }
-  &__item:last-child {
-    height: 88px;
-    padding: 32px 24px;
-    border: 0;
-    background: #5221e6;
   }
 
   &__item {
-    gap: 48px;
-    height: 88px;
     padding: 32px 0px;
     background-color: none;
   }
 
-  &__link {
+  &__link-experience {
+    width: 132px;
+    height: 88px;
     color: #fff;
+    padding: 32px 24px;
     /* Paragraph_16px */
-    font-family: Sen;
     font-size: 16px;
     line-height: 150%; /* 24px */
+    &:hover {
+      text-decoration: underline;
+    }
+    &:active {
+      background: #5221e6;
+      transition: 0.5s;
+    }
+  }
+  &__link-work {
+    width: 88px;
+    height: 88px;
+    color: #fff;
+    padding: 32px 24px;
+    /* Paragraph_16px */
+    font-size: 16px;
+    line-height: 150%; /* 24px */
+    &:hover {
+      text-decoration: underline;
+    }
+    &:active {
+      background: #5221e6;
+      transition: 0.5s;
+    }
+  }
+  &__link-photography {
+    width: 147px;
+    height: 88px;
+    color: #fff;
+    padding: 32px 24px;
+    /* Paragraph_16px */
+    font-size: 16px;
+    line-height: 150%; /* 24px */
+    &:hover {
+      text-decoration: underline;
+    }
+    &:active {
+      background: #5221e6;
+      transition: 0.5s;
+    }
+  }
+  &__link-contact {
+    width: 109px;
+    height: 88px;
+    color: #fff;
+    padding: 32px 24px;
+    /* Paragraph_16px */
+    font-size: 16px;
+    line-height: 150%; /* 24px */
+    &:hover {
+      text-decoration: underline;
+    }
+    &:active {
+      background: #5221e6;
+      transition: 0.5s;
+    }
   }
 }
 .hero {
@@ -222,6 +268,8 @@
   }
 
   &__button {
+    display: flex;
+    flex-direction: column;
     background: none;
     border: 0;
     color: #181823;
@@ -235,6 +283,11 @@
     width: 116px;
     height: 1px;
     background: #8491a0;
+    &:hover {
+      transform: scale(0.9);
+      height: 3px;
+      transition: 1s;
+    }
   }
 }
 
@@ -251,6 +304,10 @@
   &__column {
     display: flex;
     flex-direction: column;
+  }
+  &__column:hover {
+    transform: scale(1.01);
+    transition: 1s;
   }
 
   &__title {
@@ -352,6 +409,10 @@
       margin-bottom: 0px;
     }
   }
+  &__website-block:hover {
+    transform: scale(0.99);
+    transition: 1s;
+  }
 
   &__title-website {
     padding: 40px 32px 13px 32px;
@@ -382,6 +443,11 @@
     line-height: 150%; /* 27px */
     text-transform: uppercase;
   }
+  &__button:hover {
+    transform: scale(0.98);
+    background: #8491a0;
+    transition: 1s;
+  }
 }
 .instagram {
   &__section {
@@ -395,7 +461,7 @@
     width: 720px;
     height: 600px;
     flex-shrink: 0;
-    background: var(--Violet-Accent, #fbe4ff);
+    background: #fbe4ff;
     display: flex;
     flex-direction: column;
     padding: 120px 72px;
@@ -418,20 +484,25 @@
   }
 
   &__button {
+    display: flex;
+    flex-direction: column;
     background: none;
     border: 0;
     width: 125px;
-    height: 24px;
     color: #181823;
     /* Paragraph_16px */
     font-size: 16px;
     line-height: 150%; /* 24px */
   }
-  &__button-line {
+  &__line-button {
     width: 125px;
     height: 1px;
-
     background: #8491a0;
+    &:hover {
+      transform: scale(0.9);
+      height: 3px;
+      transition: 1s;
+    }
   }
 }
 .dribbble {
@@ -459,21 +530,27 @@
   }
 
   &__button {
+    display: flex;
+    flex-direction: column;
     border: 0;
     background: none;
     color: #fff;
     /* Paragraph_16px */
     font-size: 16px;
     line-height: 150%; /* 24px */
-    padding-bottom: 4px;
   }
-  &__button-line {
+  &__line-button {
     width: 171px;
     height: 1px;
     background: #8491a0;
-    margin-bottom: 120px;
+    &:hover {
+      transform: scale(0.9);
+      height: 3px;
+      transition: 1s;
+    }
   }
   &__background {
+    margin-top: 120px;
     width: 1076px;
     height: 36px;
     flex-shrink: 0;
@@ -525,9 +602,11 @@
   }
 
   &__button {
+    display: flex;
+    flex-direction: column;
     padding-bottom: 4px;
     width: 146px;
-    height: 24px;
+
     color: #fff;
     /* Paragraph_16px */
     font-size: 16px;
@@ -540,6 +619,11 @@
     width: 146px;
     height: 1px;
     background: #8491a0;
+    &:hover {
+      transform: scale(0.9);
+      height: 3px;
+      transition: 1s;
+    }
   }
 
   &__company-block {
@@ -729,6 +813,10 @@
     line-height: 150%; /* 27px */
     text-transform: uppercase;
   }
+  &__button:hover {
+    transform: scale(0.99);
+    transition: 1s;
+  }
   &__input-name,
   &__input-email,
   &__input-message {
@@ -799,5 +887,14 @@
     /* Paragraph_16px */
     font-size: 16px;
     line-height: 150%; /* 24px */
+  }
+  &__navigation-item:hover {
+  }
+  &__icon:hover {
+    transform: scale(0.9);
+    transition: 1s;
+  }
+  &__icon:active {
+    transform: rotate(50deg);
   }
 }
