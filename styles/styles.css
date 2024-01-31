@@ -13,12 +13,13 @@
   height: 900px;
 }
 .header__navigation {
-  position: relative;
+  position: fixed;
   z-index: 5;
   display: inline-flex;
-  gap: 740px;
+  gap: 744px;
   padding: 0px 72px;
   align-items: center;
+  background: #000;
 }
 .header__logo {
   width: 78px;
@@ -767,10 +768,15 @@
 .footer__navigation-item {
   width: 196px;
   height: 48px;
+}
+.footer__link {
   color: #fff;
   /* Paragraph_16px */
   font-size: 16px;
   line-height: 150%; /* 24px */
+}
+.footer__link:hover {
+  text-decoration: underline;
 }
 .footer__icon:hover {
   transform: scale(0.9);

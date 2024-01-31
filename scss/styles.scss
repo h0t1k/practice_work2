@@ -14,12 +14,13 @@
     height: 900px;
   }
   &__navigation {
-    position: relative;
+    position: fixed;
     z-index: 5;
     display: inline-flex;
-    gap: 740px;
+    gap: 744px;
     padding: 0px 72px;
     align-items: center;
+    background: #000;
   }
 
   &__logo {
@@ -879,16 +880,18 @@
     display: flex;
     flex-direction: column;
   }
-
   &__navigation-item {
     width: 196px;
     height: 48px;
+  }
+  &__link {
     color: #fff;
     /* Paragraph_16px */
     font-size: 16px;
     line-height: 150%; /* 24px */
   }
-  &__navigation-item:hover {
+  &__link:hover {
+    text-decoration: underline;
   }
   &__icon:hover {
     transform: scale(0.9);
